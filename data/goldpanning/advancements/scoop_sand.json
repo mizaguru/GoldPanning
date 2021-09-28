@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "scoop_sand": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:air"
+              ]
+            },
+            "offhand": {
+              "items": [
+                "minecraft:air"
+              ]
+            }
+          }
+        },
+        "item": {
+          "items": [
+            "minecraft:piglin_spawn_egg"
+          ],
+          "nbt": "{EntityTag:{Item:{Count:1b,id:\"minecraft:air\"},id:\"minecraft:item\"},CustomModelData:1}"
+        },
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:sand"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "goldpanning:scoop_sand"
+  }
+}

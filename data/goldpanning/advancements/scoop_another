@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "scoop_another": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "items": [
+                "minecraft:air"
+              ]
+            },
+            "offhand": {
+              "items": [
+                "minecraft:air"
+              ]
+            }
+          }
+        },
+        "item": {
+          "items": [
+            "minecraft:glow_squid_spawn_egg"
+          ],
+          "nbt": "{EntityTag:{Item:{Count:1b,id:\"minecraft:air\"},id:\"minecraft:item\"}}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "goldpanning:scoop_another"
+  }
+}
